@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Shopping</title>
+    <link rel="shortcut icon" href="images/main-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Style/bootstrap.min.css" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="stylesheet" href="Style/all.min.css" />
+    <!-- Render All Element Normal -->
+    <!-- <link rel="stylesheet" href="Style/normalize.css"> -->
+
+    <!-- Font Awesome Library -->
+    <!-- <link rel="stylesheet" href="Style/all.min.css"> -->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;800;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- start font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Font -->
+  </head>
+  <body dir="rtl">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="images/WhatsApp Image 2024-08-23 at 05.47.27_dc6d5454.jpg" width="100px" height="50px" alt="" />
+        </a>
+        <!-- <button class="btn btn-dark" onclick="toggleDarkMode()">Dark Mode</button> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#services">خدماتنا</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                الصفحات
+              </a>
+              <ul class="dropdown-menu text-center" data-bs-theme="dark">
+                <li><a class="dropdown-item" href="#">الاخبار</a></li>
+                <li><a class="dropdown-item" href="#bestselling">اخر المنتجات</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#order">طلبيات</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Products">المنتجات</a>
+            </li>
+          </ul>
+        </div>
+     
+        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+               <!-- shping-card -->
+        <div class="text-white">
+          <span>السلة</span>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <!-- end -->
+        </a>
+      </div>
+    </nav>
+    <!-- start slider -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/gorgeos-stylish-young-woman-posing-with-colorful-shopping-bags-dark-haired-blue-eyed-lady-with-happy-smile-light-wall (1).jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>رفاهيتك تهمنا</h2>
+            <p>افضل موقع للتسوق الكتروني</p>
+            <button class="btn btn-dark change-ca">تسوق الان</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/laptop-near-smartphone-tags-tablet-packet (1).jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>الجوده سمتنا</h2>
+            <p>كل ما تريده واكثر سيصلك حتي باب المنزل</p>
+            <!-- <button>تسوق الان</button> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/young-couple-holding-shopping-bags (1).jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>راحتك غايتنا</h2>
+            <p>عروض ترويجيه يوميه تجعلك لا تتردد في الشراء</p>
+            <!-- <button>تسوق الان</button> -->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <i class="fa-solid fa-angles-left myicon"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <i class="fa-solid fa-angles-right myicon"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+     <!-- End slider -->
+      <!-- Start Products -->
+       <section id="Products" class="text-center mt-5">
+           <div class="d-flex justify-content-center ">
+            <h2 class="text-header pb-2">المنتجات</h2>
+           </div>
+           <div class="mt-4 mb-5  filter-button-group">
+            <button class="btn btn-primary m-2" data-filter="*">الكل</button>
+            <button class="btn btn-primary m-2" data-filter=".mastsells">الاكثر مبيعا</button>
+            <button class="btn btn-primary m-2" data-filter=".featurs">السمات</button>
+            <button class="btn btn-primary m-2" data-filter=".news">الاحدث</button>
+            <button class="btn btn-primary m-2" data-filter=".discount">الخصومات</button>
+           </div>
+           <div>
+            <div class="container">
+
+              <div class="d-flex justify-content-evenly flex-wrap xgrid">
+            <div class="card mastsells text-center m-2" style="width: 18rem;">
+              <img src="images/pair-trainers (1).jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <div class="card-body">
+                <div class="bule-cemon mb-3 mt-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="card-title">جزمة اسبورت</p>
+                <p class="card-text fw-bold blue">70$</p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="card featurs text-center m-2" style="width: 18rem;">
+              <img src="images/one-black-sneaker-shoe-isolated-white (1).jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <div class="card-body">
+                <div class="bule-cemon mb-3 mt-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="card-title">جزمة اسبورت</p>
+                <p class="card-text fw-bold blue">70$</p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="card news mastsells text-center m-2" style="width: 18rem;">
+              <img src="images/rendering-smart-home-device (1).jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="bule-cemon mb-3 mt-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="card-title">ساعة ابل</p>
+                <p class="card-text fw-bold blue">700$</p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="card discount mastsells text-center m-2" style="width: 18rem;">
+              <img src="images/fashion-woman-with-clothes (1).jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="bule-cemon mb-3 mt-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="card-title">فستان نسائي</p>
+                <p class="card-text fw-bold blue">100$</p>
+              </div>
+            </div>
+            <!--  -->
+                  <!--  -->
+                  <div class="card mastsells news text-center m-2" style="width: 18rem;">
+                    <img src="images/fast-fashion-vs-slow-sustainable-fashion (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="bule-cemon mb-3 mt-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="card-title">تشيرت رجالي</p>
+                      <p class="card-text fw-bold blue">100$</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                        <!--  -->
+            <div class="card featurs mastsells text-center m-2" style="width: 18rem;">
+              <img src="images/elegant-smartphone-composition (2).jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="bule-cemon mb-3 mt-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="card-title">جوال ايفون</p>
+                <p class="card-text fw-bold blue">1000$</p>
+              </div>
+            </div>
+            <!--  -->
+
+          </div>
+          </div>
+
+           </div>
+       </section>
+     <!-- End Products -->
+      <!-- Start offcanvas -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">الطلبيات</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+         <div class="text-center">
+          <img class="img-thumbnail img-test" src="images/fedora-hats-studio-still-life (1).jpg" alt="">
+          <p>كاب</p>
+          <p class="offcan-price">10$</p>
+         </div>
+         <hr>
+         <div class="text-center">
+          <img class="img-thumbnail img-test" src="images/smartwatch-screen-digital-device (1).jpg" alt="">
+          <p>ساعة ابل</p>
+          <p class="offcan-price">100$</p>
+         </div>
+         <hr>
+         <div class="text-center">
+          <img class="img-thumbnail img-test" src="images/smartphone-nature-concept.jpg" alt="">
+          <p>جوال ايفون</p>
+          <p class="offcan-price">1000$</p>
+         </div>
+         <hr>
+         <div class="text-center">
+          <img class="img-thumbnail img-test" src="images/graphic-woman-dress-trendy-design-white-background (1).jpg" alt="">
+          <p>فستان نسائي</p>
+          <p class="offcan-price">130$</p>
+         </div>
+         <hr>
+         <div class="text-center">
+          <img class="img-thumbnail img-test" src="images/modern-blue-sports-shoe-design-close-up-fashionable-generated-by-ai (1).jpg" alt="">
+          <p>جزمه اسبورت</p>
+          <p class="offcan-price">30$</p>
+         </div>
+         <hr>
+         <h5 class="text-center offcan-header">الاجمالي:5000$</h5>
+         <hr>
+       <div class="text-center">
+        <button class="btn btn-dark change-ca">
+          اكمال الشراء
+          </button>
+       </div>
+        </div>
+      </div>
+       <!-- end offCanvs -->
+        <!-- start modal -->
+         <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">تفاصيل المنتج</h1>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+        <div class="row">
+           <div class="col">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/pair1-.jpg" class="d-block w-100 h-25" style="height: 300px !important;" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/pair2.jpg" class="d-block w-100 h-25" style="height: 300px !important;" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/pair-trainers.jpg" class="d-block w-100 h-25" style="height: 300px !important;" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <i class="fa-solid fa-angles-left myicon"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <i class="fa-solid fa-angles-right myicon"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+           </div>
+           <div class="col">
+            <div class="pt-5">
+            <h4> جزمه اسبورت</h4>
+            <p>من اجود واجمل الاحذيه في العالم تناسب انواع الموضه</p>
+            <p>السعر 50$</p>
+            <button class="btn btn-primary">اضف الي السله
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+           </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark change-ca" data-bs-dismiss="modal">اغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
+         <!-- End modal -->
+          <!-- STARTcontact US -->
+           <section id="contactus" class="contact text-center mt-5">
+            <div class="w-50 mx-auto">
+             <h2 class="blue text-header d-inline-block pb-2 mt-5 mb-4">تواصل معانا</h2>
+             <p class="blue pb-4">نقدم لك اجمل وافضل المنتجات التي تناسب ذوق حضرتك بافضل الاسعار </p>
+             <div class="input-group mb-3">
+             <input class="form-control border-start-0 inputcontact" type="text" placeholder="البريد الالكتروني">
+             <!-- <button class="btn btn-primary">اشترك معانا</button> -->
+            </div>
+               <button class="btn btn-primary">اشترك معانا</button>
+            </div>
+           </section>
+           <!--  ENDcontact US  -->
+             <!-- start Form -->
+              <section id="order" class="mb-5 mt-5">
+                <div class="container mt-5 border rounded p-5 ">
+                  <div class="d-flex justify-content-center">
+                 <h2 class="blue text-header d-inline-block mt-5">طلبية خاصة</h2>
+                </div>
+                 <div class="row mt-5">
+                  <div class="col">
+                    <label for="">الاسم</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col">
+                    <label for="">البريد الالكتروني</label>
+                    <input type="text" class="form-control">
+                  </div>
+                 </div>
+                 <div class="row mt-4">
+                  <div class="col">
+                    <label for="">رقم الهاتف</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col">
+                    <label for="">عنوان الرسالة</label>
+                    <input type="text" class="form-control">
+                  </div>
+                 </div>
+                 <div class="row mt-4">
+                  <div class="col">
+                    <label for="">تفاصيل الرسالة</label>
+                    <textarea name="" id="" class="form-control"></textarea>
+                  </div>
+                    <div class="rom mt-4">
+                      <div class="cal text-center mb-5">
+                        <button class="btn btn-primary w-25 ">ارسال</button>
+                      </div>
+                    </div>
+                 </div>
+                </div>
+              </section>
+              <!-- End Form -->
+               <!-- start Best Selling -->
+                <section id="bestselling" class=" bestselling mt-5">
+                  <div class="container">
+                    <div class="d-flex justify-content-center mt-5 mb-5">
+                    <h2 class="blue text-header d-inline-block">المنتجات الاكثر طلبا</h2>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <h5>الاكثر تقيما</h5>
+                          <!-- start -->
+                        <div class="d-flex align-items-center mb-3">
+                          <img src="images/small-purse-studio-still-life (2).jpg" class="w-50 img-thumbnail ms-3" alt="">
+                          <div>
+                          <p>شنطة يد نسائية</p>
+                          <p class="blue fw-bold">60$</p>
+                        </div>
+                        </div>
+                       
+                        <div class="d-flex align-items-center mb-3">
+                          <img src="images/fedora-hats-studio-still-life (1).jpg" class="w-50 img-thumbnail ms-3" alt="">
+                          <div>
+                          <p>كاب</p>
+                          <p class="blue fw-bold">20$</p>
+                        </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                          <img src="images/spring-wardrobe-switch-still-life (1).jpg" class="w-50 img-thumbnail ms-3" alt="">
+                          <div>
+                          <p>حزاء نسائي</p>
+                          <p class="blue fw-bold">70$</p>
+                        </div>
+                        </div>
+                     
+                        <!-- <div class="d-flex align-items-center mb-3">
+                          <img src="images/beautiful-dress-hanging (1).jpg" class="w-50 img-thumbnail ms-3" alt="">
+                          <div>
+                          <p>ساعه ابل</p>
+                          <p class="blue fw-bold">70$</p>
+                        </div>
+                        </div> -->
+
+                          <!-- end -->
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <h5>الاكثر مبيعا</h5>
+                       
+                            <div class="d-flex align-items-center mb-3">
+                              <img src="images/model-career-kit-still-life (1).jpg" class="w-50 img-thumbnail ms-3" alt="">
+                              <div>
+                              <p>ميكاب</p>
+                              <p class="blue fw-bold">90$</p>
+                            </div>
+                            </div>
+                             
+                            <!-- <div class="d-flex align-items-center mb-3">
+                              <img src="images/expensive-golden-ring-with-white-powder-background.jpg" class="w-50 img-thumbnail ms-3" alt="">
+                              <div>
+                              <p>ساعه ابل</p>
+                              <p class="blue fw-bold">70$</p>
+                            </div>
+                            </div> -->
+                        
+                            <div class="d-flex align-items-center mb-3">
+                              <img src="images/legs-wearing-socks-with-clovers-motif (1).jpg" class="w-50 img-thumbnail ms-3" alt="">
+                              <div>
+                              <p>شرابات</p>
+                              <p class="blue fw-bold">10$</p>
+                            </div>
+                            </div>
+                             
+                            <div class="d-flex align-items-center mb-3">
+                              <img src="images/high-heels-make-up-case.jpg" class="w-50 img-thumbnail ms-3" alt="">
+                              <div>
+                              <p>حزاء نسائي</p>
+                              <p class="blue fw-bold">80$</p>
+                            </div>
+                            </div>
+                              
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <h5>العروض</h5>
+                  
+                            <div class="d-flex align-items-center mb-3 mt-4">
+                              <img src="images/graphic-shirt-trendy-design-mockup (1).jpg" class="w-50 img-thumbnail ms-3" alt="">
+                              <div>
+                              <p>تشيرت رجالي</p>
+                              <p class="blue fw-bold">70$</p>
+                            </div>
+                            </div>
+                             
+                            <div class="d-flex align-items-center mb-3">
+                              <img src="images/pants-hanger-with-green-background (2).jpg" class="w-50 img-thumbnail ms-3" alt="">
+                              <div>
+                              <p>بنطلون رجالي</p>
+                              <p class="blue fw-bold">40$</p>
+                            </div>
+                            </div>
+                              
+                            <div class="d-flex align-items-center mb-3">
+                              <img src="images/hand-holding-light-brown-beige-pants (1).jpg" class="w-50 img-thumbnail ms-3" alt="">
+                              <div>
+                              <p>بنطلون رجالي</p>
+                              <p class="blue fw-bold">50$</p>
+                            </div>
+                            </div>
+                              
+                            <!-- <div class="d-flex align-items-center mb-3">
+                              <img src="images/phone.jpg" class="w-50 img-thumbnail ms-3" alt="">
+                              <div>
+                              <p>ساعه ابل</p>
+                              <p class="blue fw-bold">70$</p>
+                            </div>
+                            </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- End Best Selling -->
+                 <!-- start contract -->
+                  <hr class="mt-5 mb-5">
+                  <section id="contract" class=" contract mt-5 mb-5 text-center">
+                    <div class="container">
+                    <button class="btn btn-danger w-25" data-bs-toggle="collapse" data-bs-target="#collapseExample">سياسات الخدمه</button>
+                    <button class="btn btn-dark" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">السله
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <div class="collapse m-5" id="collapseExample">
+                      <div class="card card-body mb-5" style="background-color: #efefef;">
+                       <h5 class="text-center text-danger">سياسه ارجاع المنتجات</h5>
+                       <div class="accordion mt-2" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                           مده الاسترجاع
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                            <p>يمكن ارجاع المنتجات في غضون عشره ايام من تاريخ الشراء</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                              سياسه الاحتفاظ بالعلبه
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <p>الرجاء الاحتفاظ بالعلبه الخاصه بالمنتج بالحاله التي عليها عند الاستخدام</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                              سياسه تقيم المنتج
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <p>اذا تم ملاحظه اي خطا بالمنتج يمكنك تقييم المنتج</p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  </section>
+                  <hr>
+                  <!-- End contract -->
+                   <!-- start services -->
+                    <section id="services">
+                      <div class="container mt-5">
+                        <div class="d-flex justify-content-center">
+                     <h2 class="d-inline-block blue text-header">خدماتنا</h2>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col-md-5 col-sm-12">
+                        <img src="images/Mobile Marketing-pana.png" width="250" height="250" alt="">
+                      </div>
+                      <div class="col-md-7 pt-5 col-sm-12">
+                        <h5 class="blue mt-5">تسويق عن طريق الموبايل</h5>
+                        <p>يوجد لدينا خدمات وعروض خاصه للتطبيقات اداره مبيعات السوبر ماركتومعامل التحليل وعيادات الدكاتره 
+                          والصيدليات من خلال تطبيقات سطح المكتب لاداره المؤسسات وحساب الارباح والتقارير وغيرها
+                        </p>
+                      </div>
+                    </div>
+                    <!-- space -->
+                    <div class="row text-center" dir="ltr">
+                      <div class="col-md-5 col-sm-12">
+                        <img src="images/Credit Card Payment-cuate.png" width="250" height="250">
+                      </div>
+                      <div class="col-md-7 pt-5 col-sm-12">
+                        <h5 class="blue mt-5"> جميع وسائل الدفع اونلاين  </h5>
+                        <p>يوجد لدينا خدمات وعروض خاصه للتطبيقات اداره مبيعات السوبر ماركتومعامل التحليل وعيادات الدكاتره 
+                          والصيدليات من خلال تطبيقات سطح المكتب لاداره المؤسسات وحساب الارباح والتقارير وغيرها
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col-md-5 col-sm-12">
+                        <img src="images/Data report-amico.png" width="250" height="250" alt="">
+                      </div>
+                      <div class="col-md-7 pt-5 col-sm-12">
+                        <h5 class="blue mt-5">احصائيات كامله للموردين</h5>
+                        <p>يوجد لدينا خدمات وعروض خاصه للتطبيقات اداره مبيعات السوبر ماركتومعامل التحليل وعيادات الدكاتره 
+                          والصيدليات من خلال تطبيقات سطح المكتب لاداره المؤسسات وحساب الارباح والتقارير وغيرها
+                        </p>
+                      </div>
+                    </div>
+                    <!-- space -->
+                    <div class="row text-center" dir="ltr">
+                      <div class="col-md-5 col-sm-12">
+                        <img src="images/Take Away-amico.png" width="250" height="250">
+                      </div>
+                      <div class="col-md-7 pt-5 col-sm-12">
+                        <h5 class="blue mt-5">التوصيل والشحن حتي باب المنزل</h5>
+                        <p>يوجد لدينا خدمات وعروض خاصه للتطبيقات اداره مبيعات السوبر ماركتومعامل التحليل وعيادات الدكاتره 
+                          والصيدليات من خلال تطبيقات سطح المكتب لاداره المؤسسات وحساب الارباح والتقارير وغيرها
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+                    </section>
+                    <!-- End Services -->
+                   <!-- Start Footer -->
+                    <footer>
+                      <div class="container pt-5 text-white">
+                      <div class="row">
+                        <div class="col col-sm-12">
+                          <h4>عن الفريق</h4>
+                          <p>يقدم لك موقعنا تجربه فريده من نوعها في عالم التسوق ومع تسوق الكتروني ممتع وسهل الاستخدام
+                            عند الحاجه الي شراء اي نوع من المنتجات والاجهزه ونؤكد لك انك تحصل علي اي شئ يعجبك في الكتالوج الخاص بنا
+                          </p>
+                        </div>
+                        <div class="col-2 col-sm-12"></div>
+                        <div class="col">
+                          <h4>تواصل معانا</h4>
+                          <p class="pt-3">
+                            <i class="fa-solid fa-house me-3"></i>
+                            الامارات - دبي
+                          </p>
+                          <p>
+                            <i class="fa-solid fa-envelope me-3"></i>
+                            mosabkongfu2016@gmail.com
+                          </p>
+                          <p>
+                            <i class="fa-solid fa-phone me-3"></i>
+                            00971501090348
+                          </p>
+                          <p>
+                            <i class="fa-solid fa-phone me-3"></i>
+                            00249920725088
+                          </p>
+                        </div>
+                        <div class="col col-sm-12">
+                          <h4>تابعنا</h4>
+                          <div class="social text-white">
+                            <a href="https://www.facebook.com/profile.php?id=100009400089292" target="_blank" class="link-light text-decoration-none text-muted">
+                              <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/feed/" target="_blank" class="link-light text-decoration-none text-muted">
+                              <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/musab-Abdallah" target="_blank" class="link-light text-decoration-none text-muted">
+                              <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/musab_code/" target="_blank" class="link-light text-decoration-none text-muted">
+                              <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    </footer>
+                    <!-- End Footer -->
+      <!-- <div style="height: 1000px;"></div> -->
+      <script src="Script/all.min.js"></script>
+    <script src="Script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A=="
+        crossorigin="anonymous"></script>
+
+    <script src="Script/isotope.pkgd.js"></script>
+    <!-- <script src="/path/to/isotope.pkgd.min.js"></script> -->
+    <script src="Script/script.js"></script>
+  </body>
+</html>

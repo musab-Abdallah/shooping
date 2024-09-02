@@ -1,0 +1,173 @@
+
+html {
+    font-size: 16px;
+    color: var(--lightcolor);
+    scroll-behavior: smooth;
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.navbar {
+    background-color: #017dbf !important;
+}
+.logo {
+    border-radius: 15px;
+}
+.carousel-item img {
+    height: 100vh;
+}
+.myicon {
+    color: #017dbf;
+    font-size: 30px;
+}
+.carousel-caption {
+    background-color: rgb(151, 194, 224.4);
+    border-radius: 20px;
+    bottom: 8rem;
+}
+.carousel-caption:hover {
+    background-color: rgb(163, 184, 200);
+  transition: ease .7s;
+}
+.change-ca:hover {
+  background-color: crimson !important;
+  border-radius: 20px;
+  transition: 1s ease;
+}
+.carousel-indicators button {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    background-color: #017dbf !important;
+}
+.carousel-indicators button:hover {
+    background-color: crimson !important;
+    transition: 1s ease .1s;
+}
+.carousel-caption p {
+  font-size: 20px;
+}
+.carousel-caption h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.carousel-caption {
+    padding: 20px !important;
+}
+/*  */
+/* statr offcavas */
+.img-test {
+    width: 250px !important;
+    height: 300px !important;
+}
+.img-test:hover {
+   transform: skew(-5deg);
+   transition: ease all 1s;
+}
+.offcan-price {
+    color: #017dbf;
+    font-weight: bold;
+}
+.offcan-header {
+    color: crimson !important;
+}
+/* products */
+.text-header {
+    border-bottom: crimson solid 5px;
+}
+.btn-primary {
+    background-color: #017dbf;
+}
+.btn-primary:hover {
+    background-color: crimson;
+    border-radius: 20px;
+    transition: .7s ease all;
+}
+.blue {
+    color: #017dbf !important;
+}
+.bule-cemon {
+    color: #017dbf !important;
+}
+.bule-cemon:hover {
+    color: crimson !important;
+    transition: 1s ease all;
+    cursor: pointer;
+}
+.card img:hover {
+    transform: scale(1.1);
+    transition: ease all 1s;
+}
+.card {
+    overflow: hidden;
+}
+.card img{
+    height: 250px;
+    width: 100%;
+}
+/*  start contact */
+.contact {
+    height: 60vh;
+    background: url('../images/elegant-adult-woman-holding-shopping-bags-with-copy-space\ \(1\).jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.inputcontact {
+    border-radius: 0px !important;
+}
+.contact button {
+    width: 150px !important;
+    border-radius: 20px 0px 0px 20px !important;
+}
+/* start bestselling */
+.bestselling img:hover {
+   transform: rotate(5deg) scale(1.1);
+   transition: ease all 1s;
+}
+/* contract */
+.contract h5 {
+    color: crimson !important;
+}
+.accordion .accordion-button {
+    background-color: #017dbf !important;
+    text-align: center !important;
+    color: white !important;
+    display: flex;
+justify-content: center;
+}
+.accordion-button::after {
+    display: none;
+}
+/* footer */
+footer {
+    background-color: #017dbf;
+}
+/* scroll */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #017dbf;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+   background: crimson;
+  }
+  /* services */
+  #services {
+    margin-top: 150px !important;
+  }
